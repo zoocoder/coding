@@ -1,0 +1,1 @@
+Some short solutions to common programming questions, mostly algorithmic.
