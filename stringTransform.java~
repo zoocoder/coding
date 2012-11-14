@@ -1,0 +1,20 @@
+public static List<String> getSequence(Set<String> dictionary, String start, String goal) {
+    Map<String, String> parent = new HashMap<String, String>();
+    List<String> queue = LinkedList<String>();
+    queue.addFirst(start);
+    String curr = start;
+    while (queue.notEmpty()) {
+	for (int i = 0; i < start.length(); i++) {
+	    for (char c = a; c <= z; c++) {
+		next = start.replace(i, c);
+		if (dictionary.contains(next) && !parent.contains(next)) {
+		    queue.addLast(next);
+		    dictionary[curr] = next;
+		    curr = next;
+		}
+	    }
+	}
+    }
+
+    
+		    
