@@ -1,0 +1,6 @@
+#Given array arr of length N, find an a[i], a[j], a[k] such that i<j<k
+#and runs in O(N), constant space.
+
+def findIJK(arr):
+    len = length(arr)
+    
