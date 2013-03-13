@@ -1,0 +1,26 @@
+boolean covers(TreeNode root, TreeNode p) {
+    if (root == null) {
+	return false;
+    }
+    if (root == p) {
+	return true;
+    }
+    return covers(root.left, p) || covers(root.right, p);
+}
+
+TreeNode commonAncestorHelper(TreeNode root, TreeNode p, TreeNode q) {
+    if (root == null) return null;
+    if (root == p || root == q) return root;
+    
+    boolean ponleft = covers(root.left, p);
+    boolean qonleft = covers(root.left, q);
+    
+    if (ponleft != qonleft) return root;
+    TreeNode next = ponleft ? root.left : root.right;
+    return commonAncestorHelper(next, p, q);
+}
+
+TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if (!covers(root, p) || !covers(root, q)) return null;
+    return commonAncestorHelper(root, p, q);
+}

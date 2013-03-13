@@ -1,0 +1,7 @@
+public static void deleteMiddleNode(LinkedListNode n) {
+    while (n.next != null) {
+	n.data = n.next.data;
+	n = n.next;
+    }
+    n = null;
+}

@@ -1,0 +1,31 @@
+public class fillIn {
+    /** Fill in white space in string with "%20". Assume given true length.*/
+    public static void main(String[] args) {
+    }
+
+    public static String replace(String s, int len) {
+	//First make all white spaces 3 characters long.
+	String new_s = elongate(s, len);
+    }
+
+    public static String elongate(String s, int len) {
+	char[] letters = s.toCharArray();
+	int firstWhiteSpace;
+     
+	for (int i = 0; i < s.length(); i++) { //Find index of first white space.
+	    if (letters[i].equals(" ")) {
+		firstWhiteSpace = i;
+		break;
+	    }
+	}
+	replaceChars = new String("%20");
+	char[] shiftLetters = replaceChars.concat(s.subString(i+1, s.length())).toCharArray();
+	int j;
+	int j = 0;
+	for (; firstWhiteSpace < shiftLetters.length(); firstWhiteSpace++) {
+	    letters[firstWhiteSpace] = shiftLetters[j];
+	    j+=1;
+	}
+	String result = new String(letters);
+	return result;
+}

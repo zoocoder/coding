@@ -1,0 +1,13 @@
+void reverse(char* str) {
+  char* end;
+  char temp;
+  if (str) {
+    *end = *str;
+    while(end) { //find end of array
+      ++end;
+    }
+    --end; //go back one since end is NULL
+
+    
+  }
+}

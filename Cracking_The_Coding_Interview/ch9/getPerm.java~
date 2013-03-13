@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+class getPerm {
+    public static void main(String[] args) {
+	String input = "victor";
+	ArrayList<String>
+	   

@@ -1,0 +1,2 @@
+public static Stack<Integer> sort(Stack<Integer s) {
+    Stack<Integer> result = new Stack<Integer>();

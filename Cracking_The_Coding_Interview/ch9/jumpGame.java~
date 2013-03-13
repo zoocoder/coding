@@ -1,0 +1,14 @@
+class jumpGame {
+    public static void main(String[] args) {
+	int[] input = {1, 0, 3, 4, 2, 1, 5};
+	boolean[] result = jumpGame(input);
+    }
+
+    public static boolean[] jumpGame(int[] input) {
+	if (input == null) return null;
+	boolean[] cache = new boolean[input.length];
+	return jumpGameHelp(input, cache);
+    }
+
+    public static boolean[] jumpGameHelp(int[] input, boolean[] cache) {
+    }

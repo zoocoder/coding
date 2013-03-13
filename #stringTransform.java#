@@ -33,8 +33,8 @@ public class stringTransform {
 	if (!parent.containsKey(goal))
 	    return null;
 	LinkedList<String> sequence = new LinkedList<String>();
-	sequence.addLast(end);
-	String curr = end;
+	sequence.addLast(goal);
+	String curr = goal;
 	while (!curr.equals(start)) {
 	    curr = parent.get(curr);
 	    sequence.addFirst(curr);

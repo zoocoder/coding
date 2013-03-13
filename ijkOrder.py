@@ -6,8 +6,8 @@ def findIJK(arr):
     #if the array is smaller than 3, obviously there is no ijk possible
     if (len < 3):
         return 0
-    candidates1 = [0]
-    candidates2 = [0]
+    candidates1 = arr[0]
+    candidates2 = arr[0]
     #go through backwards finding all elements with an element greater than it to the right
     currMax = arr[n-1]
     i = n-2

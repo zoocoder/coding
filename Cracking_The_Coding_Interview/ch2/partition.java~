@@ -1,0 +1,3 @@
+public LinkedListNode partition(LinkedListNode n, int x) {
+    LinkedListNode beforeX, afterX = null;
+    

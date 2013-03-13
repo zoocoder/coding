@@ -1,0 +1,11 @@
+/** Implement queue using two stacks. */
+
+public class myQueue {
+    Stack<Integer> s1;
+    Stack<Integer> s2;
+
+    myQueue() {
+	s1 = new Stack<Integer>();
+	s2 = new Stack<Integer>();
+    }
+}

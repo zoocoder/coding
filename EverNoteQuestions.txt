@@ -1,0 +1,14 @@
+Victor Zhu
+victor.zhu@berkeley.edu
+2/11/13
+
+1) "If you were given the HTML contents of a single web page, how would you determine the 10 words that best capture the meaning/content of the text on the page? How would your approach change if the page were written in a foreign language that you couldn't understand?"
+
+The general approach I would use to solve this would be to scrape data from a multitude of  webpages to approximate the frequency of words in that particular language. Next, I would parse the HTML contents of the single webpage and find the relative frequencies of every word there. The ten words that best capture the meaning of the single webpage are the words that appear more often than normal. Therefore, I would use a threshold percentage, say 50%. If a word shows up 50% more often than the average frequency (from scraping other webpages), then put that word in a list for consideration. Of course, there are articles in every language like "the, à, lä" that show up very often, but are not good representations of content. These frequencies would be much more than the threshold, and we would eliminate these outliers from our list. We would adjust the threshold to find the sweetspot, when only 10 words are remaining.
+
+2) "How might you use the contents of a user's Evernote account to automatically suggest which notebook or tags should be assigned to a new note clipped into the account from the web?"
+
+We could use the solution from part 1) above. The new note would be summarized in 10 words, which we can think of as tags. We could match these with previous notes with the same tags
+and if enough of the 10 words collide at a certain threshold, the corresponding notebook or tags would be suggested.
+
+This could also be thought of as an SVM problem, where every time the user either accepts or rejects the tags, we would use that data to adjust the linear separator appropriately.

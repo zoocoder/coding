@@ -1,0 +1,14 @@
+public static void deleteDups(LinkedListNode n) {
+    HashTable table = new HashTable();
+    LinkedListNode prev = null;
+    while (n != null) {
+	if (table.containsKey(n.data)) {
+	    prev.next = n.next;
+	} else {
+	    prev = n;
+	    table.put(n.data, true);
+	}
+
+	n = n.next;
+    }
+}

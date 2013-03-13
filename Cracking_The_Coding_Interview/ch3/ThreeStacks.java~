@@ -1,0 +1,8 @@
+/** Implement three stacks with an array. Fixed length stacks. */
+public class ThreeStacks {
+    int stackSize = 100;
+    int[] stack = new int[stackSize * 3];
+    int[] stackPointer = {-1, -1, -1}; //Keeps track of top element of each stack.
+
+    void push(int StackNum
+}

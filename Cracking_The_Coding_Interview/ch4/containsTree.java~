@@ -1,0 +1,10 @@
+boolean containsTree(TreeNode T1, TreeNode T2) {
+    if (t2 == null) {
+	return true;
+    }
+    return subTree(T1, T2);
+}
+
+boolean subTree(TreeNode T1, TreeNode T2) {
+    
+	  

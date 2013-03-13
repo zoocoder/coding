@@ -1,0 +1,6 @@
+public LinkedListNode addNodes(LinkedListNode L1, LinkedListNode L2, int carry) {
+    if (L1 == null && L2 == null && carry == 0) {
+	return null;
+    }
+
+    
